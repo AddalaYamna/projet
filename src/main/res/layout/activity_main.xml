@@ -1,0 +1,163 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img1"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.moiyennegennerale.MainActivity">
+
+
+        <TextView
+            android:id="@+id/tvnoteTd"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnoteTd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:text="Note TD" />
+
+        <EditText
+            android:id="@+id/tdM1"
+            style="@style/edit_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tdM1"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/tvnoteTp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tvnoteTp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnoteTd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:text="Note TP" />
+
+        <EditText
+            android:id="@+id/tpM1"
+            style="@style/edit_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tdM1"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/tvnoteTp"
+            android:layout_alignParentRight="true"
+            />
+
+
+        <TextView
+            android:id="@+id/tvnoteEMD"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnoteTp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:text="Note EMD : " />
+
+        <EditText
+            android:id="@+id/emdM1"
+            style="@style/edit_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tpM1"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/tvnoteEMD"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvCoef"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Coef : "
+            android:textSize="20sp"
+            android:layout_below="@+id/tvnoteEMD"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ceof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_below="@+id/emdM1"
+            android:layout_toEndOf="@+id/tvCoef"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tvCredit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Crédit :"
+            android:textSize="20sp"
+            android:layout_below="@id/tvCoef"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_below="@+id/ceof"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/tvCredit"
+
+
+            />
+        <TextView
+            android:id="@+id/moyModule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Moyenne du module :"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnbuttonM1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moyModule"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="suivant"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+</LinearLayout>

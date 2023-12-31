@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img3"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.moiyennegennerale.MainActivity">
+
+<!-- TextViews pour afficher les modules, la moyenne, le crédit et le statut -->
+<TextView
+    android:id="@+id/module1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Module 1 :"
+    android:layout_marginTop="30dp"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    />
+
+<TextView
+    android:id="@+id/module2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Module 2 :"
+    android:layout_below="@id/module1"
+    android:layout_marginTop="30dp"
+    android:textSize="40sp"
+    android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/module3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module2"
+        android:layout_marginTop="30dp"
+        android:text="Module 3 :"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/module4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module 4 :"
+        android:layout_below="@id/module3"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/module5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module 5 :"
+        android:layout_below="@id/module4"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+<TextView
+    android:id="@+id/moyG"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Moyenne Générale :"
+    android:layout_below="@id/module5"
+    android:layout_marginTop="30dp"
+    android:textSize="40sp"
+    android:textStyle="bold"/>
+
+<TextView
+    android:id="@+id/credit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Crédit :"
+    android:layout_below="@id/moyG"
+    android:layout_marginTop="30dp"
+    android:textSize="40sp"
+    android:textStyle="bold"/>
+
+<TextView
+    android:id="@+id/status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Statut :"
+    android:layout_below="@id/credit"
+    android:layout_marginTop="30dp"
+    android:textSize="40sp"
+    android:textStyle="bold"/>
+
+</RelativeLayout>
